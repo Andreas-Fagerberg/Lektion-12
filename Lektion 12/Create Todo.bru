@@ -1,0 +1,18 @@
+meta {
+  name: Create Todo
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5157/api/todos/create
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title":"Städa",
+    "description":"Som FAN!"
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Register User
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:5157/api/users/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "username":"Ab",
+    "password":"A!dasd1asdsa"
+  }
+}
